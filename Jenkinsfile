@@ -2,8 +2,8 @@ pipeline {
     agent any
     environment{
         BUILD_NUMBER = ${env.BUILD_NUMBER}
-        PROJECT = params.PROJECT
-        BRANCH = params.BRANCH
+        PROJECT = ${params.PROJECT}
+        BRANCH = ${params.BRANCH}
     }
     stages{
         stage('Build'){
